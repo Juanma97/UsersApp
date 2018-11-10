@@ -4,6 +4,7 @@
       Users App
     </ion-title>
   </ion-navbar>
+
 </ion-header>
 
 <ion-content padding>
@@ -11,7 +12,7 @@
     <ion-item *ngFor="let user of users">
       <ion-avatar item-start>
         <img [src]="user.picture.medium">
-      </ion-avatar>
+      </ion-avatar> 
       <h2>{{ user.name.first | uppercase }}</h2>
       <p>{{ user.email }}</p>
     </ion-item>
